@@ -208,13 +208,27 @@
     color: var(--muted);
     line-height: 1.6;
 }
-    .footer {
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.5;
-      text-align: center;
-      margin-top: 18px;
-    }
+.footer {
+    margin-top: 28px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer p {
+    margin: 8px 0;
+}
+
+.footer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
 
     @media (max-width: 560px) {
       body { padding: 14px; align-items: start; }
@@ -360,9 +374,10 @@
       </div>
     </section>
 
-    <p class="footer">
-      A 3912 Systems project. Setup guides and printable event signs are coming next.
-    </p>
+    <div class="footer">
+    <p><strong>Questions?</strong> Visit our <a href="faq.html">Frequently Asked Questions</a>.</p>
+    <p>© Keep Every Memory • A 3912 Systems project.</p>
+</div>
   </main>
 
   <script>
