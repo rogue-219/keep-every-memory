@@ -47,7 +47,17 @@ h1 {
     font-size: clamp(36px, 6vw, 58px);
     line-height: 1.05;
 }
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
 
+.back-link:hover {
+    text-decoration: underline;
+}
 .faq-intro {
     max-width: 700px;
     margin: 20px 0 36px;
@@ -82,6 +92,7 @@ h1 {
 <body>
   <main>
     <section class="faq-page">
+        <a class="back-link" href="index.html">← Back to Home</a>
         <p class="eyebrow">KEEP EVERY MEMORY</p>
 
         <h1>Frequently Asked Questions</h1>
