@@ -92,7 +92,36 @@ h1{
 .secondary-button:hover{
     opacity:.85;
 }
+.comparison-table{
+    margin:30px 0 40px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    overflow:hidden;
+}
 
+.comparison-row{
+    display:grid;
+    grid-template-columns:1.2fr 1fr 1.4fr;
+}
+
+.comparison-row > div{
+    padding:14px 16px;
+    border-bottom:1px solid #eee;
+}
+
+.comparison-header{
+    background:#333;
+    color:white;
+    font-weight:bold;
+}
+
+.comparison-table .comparison-row:last-child > div{
+    border-bottom:none;
+}
+
+.comparison-row:nth-child(even):not(.comparison-header){
+    background:#fafafa;
+}
 @media (max-width:600px){
     .guide-page{
         margin:20px 12px;
@@ -169,6 +198,33 @@ Google Photos consistently offered the best balance of simplicity, compatibility
 <p>
 That's why Keep Every Memory recommends Google Photos as the default option while still providing guides for other services so you can choose what works best for you.
 </p>
+        <h2>Quick Comparison</h2>
+
+<div class="comparison-table">
+    <div class="comparison-row comparison-header">
+        <div>Service</div>
+        <div>Guest Experience</div>
+        <div>Best For</div>
+    </div>
+
+    <div class="comparison-row">
+        <div><strong>Google Photos</strong></div>
+        <div>Easiest overall</div>
+        <div>Most events and mixed-device groups</div>
+    </div>
+
+    <div class="comparison-row">
+        <div><strong>OneDrive</strong></div>
+        <div>Very good</div>
+        <div>Hosts already using Microsoft 365</div>
+    </div>
+
+    <div class="comparison-row">
+        <div><strong>Apple Photos</strong></div>
+        <div>More guest friction</div>
+        <div>Small groups already using Apple devices</div>
+    </div>
+</div>
         <div class="next-step">
     <h2>Ready to Start Collecting Memories?</h2>
 
