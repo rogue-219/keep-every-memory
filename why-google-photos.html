@@ -48,6 +48,66 @@ h1{
 .guide-intro{
     font-size:1.1rem;
 }
+        .next-step{
+    margin-top:40px;
+    padding:30px;
+    background:#f7f3ed;
+    border-radius:12px;
+    text-align:center;
+}
+
+.next-step h2{
+    margin-top:0;
+}
+
+.button-group{
+    display:flex;
+    justify-content:center;
+    gap:14px;
+    flex-wrap:wrap;
+    margin-top:24px;
+}
+
+.primary-button,
+.secondary-button{
+    display:inline-block;
+    padding:12px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.primary-button{
+    background:#333;
+    color:white;
+}
+
+.secondary-button{
+    background:white;
+    color:#333;
+    border:1px solid #ccc;
+}
+
+.primary-button:hover,
+.secondary-button:hover{
+    opacity:.85;
+}
+
+@media (max-width:600px){
+    .guide-page{
+        margin:20px 12px;
+        padding:24px;
+    }
+
+    .button-group{
+        flex-direction:column;
+    }
+
+    .primary-button,
+    .secondary-button{
+        width:auto;
+    }
+}
     </style>
 </head>
 
@@ -109,6 +169,18 @@ Google Photos consistently offered the best balance of simplicity, compatibility
 <p>
 That's why Keep Every Memory recommends Google Photos as the default option while still providing guides for other services so you can choose what works best for you.
 </p>
+        <div class="next-step">
+    <h2>Ready to Start Collecting Memories?</h2>
+
+    <p>
+        The easiest way to begin is to create a shared album, generate a QR code, and test it before your event. Once it works, display the QR code where guests can easily see and scan it.
+    </p>
+
+    <div class="button-group">
+        <a class="primary-button" href="qr-generator.html">Generate a QR Code</a>
+        <a class="secondary-button" href="faq.html">Read the FAQ</a>
+    </div>
+</div>
  </section>     
 </main>
 
