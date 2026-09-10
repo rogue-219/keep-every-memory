@@ -238,10 +238,11 @@ footer p{
       .result-copy { text-align: center; }
     }
   </style>
-  <script type="module">
-    import { inject } from '/@vercel/analytics';
-    inject();
-  </script>
+  <!-- Vercel Web Analytics -->
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </head>
 
 <body>
